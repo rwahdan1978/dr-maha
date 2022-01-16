@@ -140,7 +140,6 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'ramifamilyphotos2018@gmail.com'
 EMAIL_HOST_PASSWORD = 'Fatima@2020' #os.environ.get('EMAILPASSWORD')
 
-
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
