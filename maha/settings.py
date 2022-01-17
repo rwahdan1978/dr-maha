@@ -131,6 +131,7 @@ STATICFILES_DIRS = [
 MEDIA_URL = 'cart/images/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/cart/images')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 #email local settings
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -139,7 +140,5 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'ramifamilyphotos2018@gmail.com'
 EMAIL_HOST_PASSWORD = 'Fatima@2020' #os.environ.get('EMAILPASSWORD')
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals())
